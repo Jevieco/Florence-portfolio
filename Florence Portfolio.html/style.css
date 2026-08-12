@@ -1,0 +1,669 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0.9%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    Margin: o;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f5ef;
+    color: #111;
+    overflow-x: hidden;
+}
+
+
+
+
+/* =========================
+   COLORS
+========================= */
+
+:root {
+    --red: #c91418;
+    --dark-red: #8d080b;
+    --black: #080808;
+    --cream: #f5f3ed;
+    --gray: #505250;
+    --white: #ffffff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--cream);
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 130px;
+    height: auto;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 100px;
+}
+
+.navbar a {
+    color: #111;
+    font-size: 16px;
+    text-decoration: underline;
+    
+}
+
+
+.navbar a:hover {
+    color: var(--red);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 20px 20px 70px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 10vw, 100px);
+    line-height: .9;
+    font-weight: 900;
+    color: var(--red);
+    text-shadow: 4px 4px 2px #777;
+}
+
+.hero h2 {
+    font-size: clamp(30px, 8vw, 60px);
+    line-height: .85;
+    font-weight: 900;
+    margin-top: 10px;
+    text-shadow: 3px 3px 2px #aaa;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero-buttons a {
+    color: #111;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hero-buttons a:hover {
+color: var(--red);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+.intro {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 210px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+.intro {
+    min-height: 90px;
+
+    display: relative;
+    align-items: bottom center;
+    gap: 10px;
+
+    padding: 5px 10%;
+    background: white;
+}
+
+.intro-logo img {
+    Position: relative;
+    left:40%;
+    width: 200px;
+    height: auto;
+   display: block;
+}
+
+.intro p {
+    width: 1400px;
+
+    margin: 1% 3%;
+
+    text-align: center left;
+}
+
+.intro-text p {
+    margin: 10%;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+
+    color: #222;
+}
+
+
+/* =========================
+   QUICK SERVICES
+========================= */
+
+.quick-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: black;
+    color: white;
+
+    padding: 40px 20%;
+    gap: 100px;
+
+    text-align: center;
+}
+
+.quick-services h3 {
+    color: white;
+    font-size: 12px;
+}
+
+.quick-services p {
+    font-size: 10px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+   position: relative;
+
+    width: 100%;
+
+    min-height: 210px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+.about-me img {
+    width: 300;
+    margin-left: 0%;
+    margin-right: 0;
+    
+    height: auto;
+}
+
+ 
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.services > h2 {
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: .8;
+    font-weight: 900;
+}
+
+.services h2 span {
+    color: var(--red);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.service-card,
+.digital-card {
+    background: var(--gray);
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+.service-card h3,
+.digital-card h3 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: -40px auto 10px;
+
+    background: var(--red);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.service-card ul,
+.digital-card ul {
+    padding-left: 18px;
+    font-size: 10px;
+}
+
+.digital-title {
+    margin-top: 70px;
+}
+
+.digital-card {
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    padding: 70px 8%;
+}
+
+.skills > h2 {
+    text-align: center;
+
+    font-size: clamp(40px, 7vw, 70px);
+    font-weight: 900;
+
+    line-height: .8;
+}
+
+.skills > h2 span {
+    color: var(--red);
+}
+
+.skill-container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.skill-box {
+    background: var(--gray);
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin: 10px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-label {
+    min-width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.skill-box ul {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   TOOLS
+========================= */
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    background: black;
+    color: var(--red);
+
+    padding: 15px;
+
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    padding: 70px 8%;
+}
+
+.experience h2 {
+    text-align: center;
+
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: .85;
+
+    font-weight: 900;
+}
+
+.experience h2 span {
+    color: var(--red);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.experience-grid > div {
+    background: #5a0809;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    min-height: 220px;
+}
+
+.experience-grid h3 {
+    background: var(--red);
+
+    border-radius: 30px;
+
+    padding: 8px 25px;
+
+    text-align: center;
+
+    margin-top: -55px;
+    margin-bottom: 30px;
+
+    font-size: 12px;
+}
+
+.experience-grid ul {
+    padding-left: 20px;
+    font-size: 11px;
+}
+
+
+/* =========================
+   WHY ME
+========================= */
+
+.why-me {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.why-me h2 {
+    font-size: clamp(40px, 7vw, 75px);
+    font-weight: 900;
+}
+
+.why-me h2 span {
+    color: var(--red);
+}
+
+.reasons {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.reasons div {
+    background: var(--red);
+    color: white;
+
+    padding: 10px;
+
+    margin: 7px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reasons div:nth-child(even) {
+    background: black;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: black;
+    color: white;
+
+    padding: 50px 8%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h2 {
+    color: var(--red);
+
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.contact-info h3 {
+    color: transparent;
+
+    -webkit-text-stroke: 1px white;
+
+    font-size: 35px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links h4 {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+
+    color: white;
+
+    font-size: 9px;
+
+    margin: 7px 0;
+}
+
+.footer-profile {
+    background: var(--red);
+    border-radius: 15px;
+
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-profile img {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid white;
+}
+
+.footer-profile p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 8px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .intro {
+        padding: 30px;
+    }
+
+    .quick-services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 70%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .skill-box {
+        align-items: flex-start;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
